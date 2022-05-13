@@ -1,0 +1,161 @@
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    background-color: whitesmoke;
+}
+
+header {
+    width: 100%;
+    background-color: #0e084f;
+    border-bottom: 5px black solid;
+    padding-top: 10px;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Fredoka One', "Courier New", monospace;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    background-color: black;
+    padding: 0.25em 0.5em;
+    text-align: center;
+    font-weight: normal;
+}
+
+h2 {
+    color: rgb(245, 245, 245);
+    font-family: 'Fredoka One', "Courier New", monospace;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    font-weight: normal;
+    padding: 0.25em 0.5em;
+}
+
+button {
+    font-size: 40px;
+    font-family: 'Fredoka One', "Courier New", monospace;
+    letter-spacing: 10px;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    border: 0;
+    text-transform: uppercase; 
+    padding: 0.25em 0.5em;
+    
+}
+
+button:visited {
+    color: whitesmoke;
+}
+
+.knobs {
+    text-align: center;
+}
+
+.knob {
+    display: inline-block;
+    background-color: slategrey;
+    border: black solid 3px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 15px 35px; 
+    color: white;
+    font-size: 24px;  
+}
+
+#knob1 {
+    transform: rotate(40deg);
+}
+
+#knob2 {
+    transform: rotate(299deg);
+}
+
+#knob3 {
+    transform: rotate(185deg);
+}
+
+nav {
+    font-size: 30px;
+}
+
+nav ul {
+    text-align: center;
+    margin: 10px;
+}
+
+nav li {
+        display: inline-block;
+        background-color: black;
+        margin: 0.25em;
+        padding: 0.25em;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-family: 'Fredoka One', "Courier New", monospace;
+}
+
+nav li a:visited {
+    color: whitesmoke;
+    background-color: black;
+}
+
+main {
+    position: relative;
+    z-index: -3;
+    font-family: 'Fredoka One', "Courier New", monospace;
+    letter-spacing: 10px;
+}
+
+.secret-nav {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+}
+
+.main-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+    background-image: url(../images/shiny-pedal.JPG);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#main-heading {
+    max-width: 12em;
+    z-index: 1;
+}
+
+#strapline {
+    width: 100%;
+}
+
+#collection-button {
+    max-width: 24em;
+    padding:0.25em;
+}
+
+@media only screen and (max-width: 804px), (orientation: portrait) {
+      #knob2 {
+        display: none;
+      }
+      #knob3 {
+        display: none;
+      }
+
+      nav ul {
+        width: 50%;
+        margin: 0 auto;
+    }
+    }
+
